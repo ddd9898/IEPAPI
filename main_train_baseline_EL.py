@@ -8,7 +8,6 @@ import argparse
 from sklearn.metrics import roc_auc_score,accuracy_score,f1_score,precision_score,recall_score,precision_recall_curve,auc
 import logging
 from utils.seqdataloader import seqData
-from utils.FocalLoss import SingleTaskLoss_pretrain
 from torch.nn import functional as F
 # from torch.utils.tensorboard import SummaryWriter
 

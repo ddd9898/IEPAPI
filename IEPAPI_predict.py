@@ -100,8 +100,8 @@ if __name__ == '__main__':
         model = Model_IM(num_encoder_layers = 1).to(device)
         model_name = model_basename.replace('*', str(n))
         model_path = model_dir + model_name
-        weights = torch.load(model_path)
-        # weights = torch.load(model_path,map_location=torch.device('cpu'))
+        # weights = torch.load(model_path)
+        weights = torch.load(model_path,map_location=torch.device('cpu'))
         model.load_state_dict(weights)
 
         models.append(model)

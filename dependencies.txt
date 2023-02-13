@@ -5,3 +5,4 @@ pandas==1.2.4
 tqdm==4.19.9
 matplotlib==3.3.2
 seaborn==0.11.1
+weblogo==3.7.12

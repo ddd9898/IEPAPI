@@ -23,7 +23,7 @@ This is the 1th version which has been tested on independent antigen presentatio
 Download the source code and unzip it. Simply enter the directory of IEPAPI and install all required dependencies on your operating system:
 
 ```console
-cd ./IEPAPI-master
+cd ./IEPAPI-main
 pip install -r dependencies.txt
 ```
 

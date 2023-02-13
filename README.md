@@ -52,7 +52,7 @@ pip install -r dependencies.txt
 - Run the command to obtain the immune epitope motif for the specified HLA：
   
   ```console
-  python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY -- require_pdf True
+  python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY --require_pdf True
   ```
 
 - --MHC: the name of the MHC molecule

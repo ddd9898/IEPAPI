@@ -1,0 +1,617 @@
+2023-02-19 20:17:37,433 - main_train_Model_EL.py[line:204] - INFO: Starting training:
+    Epochs:          200
+    Batch size:      320
+    Learning rate:   5e-05
+    Training size:   2689903
+    Validation size: 672481
+    Device:          cuda
+    
+2023-02-19 20:17:37,433 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 20:17:38,222 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 0 [0/2689903 (0%)]	Loss: 0.758607
+2023-02-19 20:23:55,353 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 0 [960000/2689903 (36%)]	Loss: 0.101164
+2023-02-19 20:33:15,206 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 0 [1920000/2689903 (71%)]	Loss: 0.093577
+2023-02-19 20:40:47,234 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 20:40:47,234 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 20:43:04,368 - main_train_Model_EL.py[line:222] - INFO: Epoch 0 accuracy=0.9679,precision=0.8457,recall=0.7907,F1_score=0.8173,AUC_ROC=0.9814,AUC_PR=0.8826
+2023-02-19 20:43:04,377 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=0; Best AUCROC=0.9814.
+2023-02-19 20:43:04,377 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 20:43:04,742 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 1 [0/2689903 (0%)]	Loss: 0.079698
+2023-02-19 20:52:26,940 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 1 [960000/2689903 (36%)]	Loss: 0.093887
+2023-02-19 21:01:48,707 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 1 [1920000/2689903 (71%)]	Loss: 0.099657
+2023-02-19 21:09:20,375 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 21:09:20,376 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 21:11:40,316 - main_train_Model_EL.py[line:222] - INFO: Epoch 1 accuracy=0.9718,precision=0.8534,recall=0.8335,F1_score=0.8433,AUC_ROC=0.9853,AUC_PR=0.9046
+2023-02-19 21:11:40,326 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=1; Best AUCROC=0.9853.
+2023-02-19 21:11:40,326 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 21:11:40,685 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 2 [0/2689903 (0%)]	Loss: 0.059183
+2023-02-19 21:19:27,846 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 2 [960000/2689903 (36%)]	Loss: 0.089435
+2023-02-19 21:25:02,037 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 2 [1920000/2689903 (71%)]	Loss: 0.074705
+2023-02-19 21:28:57,745 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 21:28:57,746 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 21:30:05,581 - main_train_Model_EL.py[line:222] - INFO: Epoch 2 accuracy=0.9736,precision=0.8555,recall=0.8535,F1_score=0.8545,AUC_ROC=0.9871,AUC_PR=0.9124
+2023-02-19 21:30:05,590 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=2; Best AUCROC=0.9871.
+2023-02-19 21:30:05,590 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 21:30:05,829 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 3 [0/2689903 (0%)]	Loss: 0.069202
+2023-02-19 21:35:09,169 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 3 [960000/2689903 (36%)]	Loss: 0.069516
+2023-02-19 21:40:41,661 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 3 [1920000/2689903 (71%)]	Loss: 0.080950
+2023-02-19 21:44:27,979 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 21:44:27,979 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 21:45:38,597 - main_train_Model_EL.py[line:222] - INFO: Epoch 3 accuracy=0.9750,precision=0.8858,recall=0.8327,F1_score=0.8584,AUC_ROC=0.9882,AUC_PR=0.9204
+2023-02-19 21:45:38,605 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=3; Best AUCROC=0.9882.
+2023-02-19 21:45:38,605 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 21:45:38,875 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 4 [0/2689903 (0%)]	Loss: 0.084817
+2023-02-19 21:49:55,828 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 4 [960000/2689903 (36%)]	Loss: 0.062808
+2023-02-19 21:54:16,806 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 4 [1920000/2689903 (71%)]	Loss: 0.049918
+2023-02-19 21:57:47,322 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 21:57:47,323 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 21:59:01,980 - main_train_Model_EL.py[line:222] - INFO: Epoch 4 accuracy=0.9758,precision=0.8782,recall=0.8517,F1_score=0.8648,AUC_ROC=0.9887,AUC_PR=0.9229
+2023-02-19 21:59:01,989 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=4; Best AUCROC=0.9887.
+2023-02-19 21:59:01,989 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 21:59:02,250 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 5 [0/2689903 (0%)]	Loss: 0.057765
+2023-02-19 22:04:08,911 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 5 [960000/2689903 (36%)]	Loss: 0.062140
+2023-02-19 22:09:38,656 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 5 [1920000/2689903 (71%)]	Loss: 0.079213
+2023-02-19 22:13:38,599 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 22:13:38,600 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 22:14:52,501 - main_train_Model_EL.py[line:222] - INFO: Epoch 5 accuracy=0.9767,precision=0.8731,recall=0.8696,F1_score=0.8714,AUC_ROC=0.9893,AUC_PR=0.9277
+2023-02-19 22:14:52,510 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=5; Best AUCROC=0.9893.
+2023-02-19 22:14:52,510 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 22:14:52,779 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 6 [0/2689903 (0%)]	Loss: 0.085071
+2023-02-19 22:20:08,273 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 6 [960000/2689903 (36%)]	Loss: 0.059019
+2023-02-19 22:25:31,688 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 6 [1920000/2689903 (71%)]	Loss: 0.084871
+2023-02-19 22:29:36,357 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 22:29:36,358 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 22:30:54,822 - main_train_Model_EL.py[line:222] - INFO: Epoch 6 accuracy=0.9770,precision=0.8828,recall=0.8619,F1_score=0.8722,AUC_ROC=0.9899,AUC_PR=0.9306
+2023-02-19 22:30:54,831 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=6; Best AUCROC=0.9899.
+2023-02-19 22:30:54,831 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 22:30:55,090 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 7 [0/2689903 (0%)]	Loss: 0.062225
+2023-02-19 22:36:10,211 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 7 [960000/2689903 (36%)]	Loss: 0.033544
+2023-02-19 22:41:26,112 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 7 [1920000/2689903 (71%)]	Loss: 0.066690
+2023-02-19 22:45:10,667 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 22:45:10,668 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 22:46:29,351 - main_train_Model_EL.py[line:222] - INFO: Epoch 7 accuracy=0.9772,precision=0.8907,recall=0.8535,F1_score=0.8717,AUC_ROC=0.9900,AUC_PR=0.9310
+2023-02-19 22:46:29,360 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=7; Best AUCROC=0.9900.
+2023-02-19 22:46:29,360 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 22:46:29,632 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 8 [0/2689903 (0%)]	Loss: 0.080837
+2023-02-19 22:51:41,716 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 8 [960000/2689903 (36%)]	Loss: 0.047892
+2023-02-19 22:56:53,888 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 8 [1920000/2689903 (71%)]	Loss: 0.049324
+2023-02-19 23:01:03,428 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 23:01:03,429 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 23:02:19,852 - main_train_Model_EL.py[line:222] - INFO: Epoch 8 accuracy=0.9775,precision=0.8750,recall=0.8778,F1_score=0.8764,AUC_ROC=0.9903,AUC_PR=0.9327
+2023-02-19 23:02:19,861 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=8; Best AUCROC=0.9903.
+2023-02-19 23:02:19,861 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 23:02:20,126 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 9 [0/2689903 (0%)]	Loss: 0.046973
+2023-02-19 23:07:26,753 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 9 [960000/2689903 (36%)]	Loss: 0.052479
+2023-02-19 23:12:25,696 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 9 [1920000/2689903 (71%)]	Loss: 0.026284
+2023-02-19 23:16:53,042 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 23:16:53,043 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 23:18:10,948 - main_train_Model_EL.py[line:222] - INFO: Epoch 9 accuracy=0.9778,precision=0.8842,recall=0.8701,F1_score=0.8771,AUC_ROC=0.9904,AUC_PR=0.9330
+2023-02-19 23:18:10,957 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=9; Best AUCROC=0.9904.
+2023-02-19 23:18:10,957 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 23:18:11,222 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 10 [0/2689903 (0%)]	Loss: 0.050298
+2023-02-19 23:23:30,618 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 10 [960000/2689903 (36%)]	Loss: 0.039516
+2023-02-19 23:29:05,701 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 10 [1920000/2689903 (71%)]	Loss: 0.075022
+2023-02-19 23:33:33,217 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 23:33:33,218 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 23:34:52,060 - main_train_Model_EL.py[line:222] - INFO: Epoch 10 accuracy=0.9779,precision=0.8740,recall=0.8839,F1_score=0.8790,AUC_ROC=0.9905,AUC_PR=0.9345
+2023-02-19 23:34:52,069 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=10; Best AUCROC=0.9905.
+2023-02-19 23:34:52,070 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 23:34:52,339 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 11 [0/2689903 (0%)]	Loss: 0.035355
+2023-02-19 23:39:20,201 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 11 [960000/2689903 (36%)]	Loss: 0.062434
+2023-02-19 23:43:40,891 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 11 [1920000/2689903 (71%)]	Loss: 0.047999
+2023-02-19 23:47:11,785 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-19 23:47:11,786 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-19 23:48:26,294 - main_train_Model_EL.py[line:222] - INFO: Epoch 11 accuracy=0.9786,precision=0.8850,recall=0.8784,F1_score=0.8817,AUC_ROC=0.9909,AUC_PR=0.9367
+2023-02-19 23:48:26,303 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=11; Best AUCROC=0.9909.
+2023-02-19 23:48:26,303 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-19 23:48:26,560 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 12 [0/2689903 (0%)]	Loss: 0.080139
+2023-02-19 23:53:30,793 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 12 [960000/2689903 (36%)]	Loss: 0.089149
+2023-02-19 23:58:12,140 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 12 [1920000/2689903 (71%)]	Loss: 0.060323
+2023-02-20 00:01:57,090 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 00:01:57,091 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 00:03:12,453 - main_train_Model_EL.py[line:222] - INFO: Epoch 12 accuracy=0.9788,precision=0.8866,recall=0.8788,F1_score=0.8827,AUC_ROC=0.9910,AUC_PR=0.9377
+2023-02-20 00:03:12,462 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=12; Best AUCROC=0.9910.
+2023-02-20 00:03:12,462 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 00:03:12,722 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 13 [0/2689903 (0%)]	Loss: 0.045022
+2023-02-20 00:08:11,368 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 13 [960000/2689903 (36%)]	Loss: 0.058050
+2023-02-20 00:13:20,759 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 13 [1920000/2689903 (71%)]	Loss: 0.048245
+2023-02-20 00:17:36,122 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 00:17:36,123 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 00:18:53,112 - main_train_Model_EL.py[line:222] - INFO: Epoch 13 accuracy=0.9789,precision=0.8900,recall=0.8760,F1_score=0.8829,AUC_ROC=0.9911,AUC_PR=0.9375
+2023-02-20 00:18:53,122 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=13; Best AUCROC=0.9911.
+2023-02-20 00:18:53,122 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 00:18:53,399 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 14 [0/2689903 (0%)]	Loss: 0.046049
+2023-02-20 00:23:42,541 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 14 [960000/2689903 (36%)]	Loss: 0.034619
+2023-02-20 00:28:52,926 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 14 [1920000/2689903 (71%)]	Loss: 0.066967
+2023-02-20 00:33:18,370 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 00:33:18,371 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 00:34:32,379 - main_train_Model_EL.py[line:222] - INFO: Epoch 14 accuracy=0.9790,precision=0.8834,recall=0.8861,F1_score=0.8847,AUC_ROC=0.9912,AUC_PR=0.9392
+2023-02-20 00:34:32,388 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=14; Best AUCROC=0.9912.
+2023-02-20 00:34:32,388 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 00:34:32,646 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 15 [0/2689903 (0%)]	Loss: 0.042101
+2023-02-20 00:39:14,526 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 15 [960000/2689903 (36%)]	Loss: 0.051015
+2023-02-20 00:43:59,060 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 15 [1920000/2689903 (71%)]	Loss: 0.026225
+2023-02-20 00:48:17,737 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 00:48:17,738 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 00:49:33,546 - main_train_Model_EL.py[line:222] - INFO: Epoch 15 accuracy=0.9791,precision=0.8890,recall=0.8801,F1_score=0.8845,AUC_ROC=0.9912,AUC_PR=0.9390
+2023-02-20 00:49:33,555 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=15; Best AUCROC=0.9912.
+2023-02-20 00:49:33,555 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 00:49:33,812 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 16 [0/2689903 (0%)]	Loss: 0.061144
+2023-02-20 00:54:52,003 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 16 [960000/2689903 (36%)]	Loss: 0.063261
+2023-02-20 00:59:32,857 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 16 [1920000/2689903 (71%)]	Loss: 0.025670
+2023-02-20 01:03:18,174 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 01:03:18,175 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 01:04:36,346 - main_train_Model_EL.py[line:222] - INFO: Epoch 16 accuracy=0.9790,precision=0.8797,recall=0.8910,F1_score=0.8853,AUC_ROC=0.9913,AUC_PR=0.9393
+2023-02-20 01:04:36,356 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=16; Best AUCROC=0.9913.
+2023-02-20 01:04:36,356 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 01:04:36,636 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 17 [0/2689903 (0%)]	Loss: 0.038094
+2023-02-20 01:09:34,772 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 17 [960000/2689903 (36%)]	Loss: 0.034973
+2023-02-20 01:15:03,065 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 17 [1920000/2689903 (71%)]	Loss: 0.061985
+2023-02-20 01:19:32,818 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 01:19:32,818 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 01:20:50,216 - main_train_Model_EL.py[line:222] - INFO: Epoch 17 accuracy=0.9791,precision=0.8795,recall=0.8921,F1_score=0.8858,AUC_ROC=0.9913,AUC_PR=0.9396
+2023-02-20 01:20:50,217 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=16; Best AUCROC=0.9913.
+2023-02-20 01:20:50,217 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 01:20:50,490 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 18 [0/2689903 (0%)]	Loss: 0.032223
+2023-02-20 01:26:09,991 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 18 [960000/2689903 (36%)]	Loss: 0.041851
+2023-02-20 01:31:31,031 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 18 [1920000/2689903 (71%)]	Loss: 0.057202
+2023-02-20 01:35:16,221 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 01:35:16,222 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 01:36:35,528 - main_train_Model_EL.py[line:222] - INFO: Epoch 18 accuracy=0.9795,precision=0.9030,recall=0.8674,F1_score=0.8848,AUC_ROC=0.9914,AUC_PR=0.9405
+2023-02-20 01:36:35,537 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=18; Best AUCROC=0.9914.
+2023-02-20 01:36:35,537 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 01:36:35,810 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 19 [0/2689903 (0%)]	Loss: 0.061999
+2023-02-20 01:41:22,457 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 19 [960000/2689903 (36%)]	Loss: 0.049580
+2023-02-20 01:46:02,913 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 19 [1920000/2689903 (71%)]	Loss: 0.039042
+2023-02-20 01:49:52,775 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 01:49:52,776 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 01:51:07,927 - main_train_Model_EL.py[line:222] - INFO: Epoch 19 accuracy=0.9796,precision=0.8861,recall=0.8905,F1_score=0.8883,AUC_ROC=0.9915,AUC_PR=0.9406
+2023-02-20 01:51:07,936 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=19; Best AUCROC=0.9915.
+2023-02-20 01:51:07,936 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 01:51:08,181 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 20 [0/2689903 (0%)]	Loss: 0.044555
+2023-02-20 01:55:37,404 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 20 [960000/2689903 (36%)]	Loss: 0.048701
+2023-02-20 02:00:04,866 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 20 [1920000/2689903 (71%)]	Loss: 0.073628
+2023-02-20 02:03:31,387 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 02:03:31,388 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 02:04:44,475 - main_train_Model_EL.py[line:222] - INFO: Epoch 20 accuracy=0.9792,precision=0.8789,recall=0.8943,F1_score=0.8866,AUC_ROC=0.9913,AUC_PR=0.9402
+2023-02-20 02:04:44,476 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=19; Best AUCROC=0.9915.
+2023-02-20 02:04:44,476 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 02:04:44,739 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 21 [0/2689903 (0%)]	Loss: 0.035450
+2023-02-20 02:09:22,414 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 21 [960000/2689903 (36%)]	Loss: 0.066025
+2023-02-20 02:14:03,466 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 21 [1920000/2689903 (71%)]	Loss: 0.037575
+2023-02-20 02:17:58,269 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 02:17:58,269 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 02:19:11,756 - main_train_Model_EL.py[line:222] - INFO: Epoch 21 accuracy=0.9798,precision=0.8945,recall=0.8819,F1_score=0.8882,AUC_ROC=0.9916,AUC_PR=0.9419
+2023-02-20 02:19:11,765 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=21; Best AUCROC=0.9916.
+2023-02-20 02:19:11,765 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 02:19:12,024 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 22 [0/2689903 (0%)]	Loss: 0.041661
+2023-02-20 02:24:00,893 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 22 [960000/2689903 (36%)]	Loss: 0.020944
+2023-02-20 02:28:41,851 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 22 [1920000/2689903 (71%)]	Loss: 0.020696
+2023-02-20 02:32:27,197 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 02:32:27,198 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 02:33:44,585 - main_train_Model_EL.py[line:222] - INFO: Epoch 22 accuracy=0.9794,precision=0.8865,recall=0.8866,F1_score=0.8865,AUC_ROC=0.9914,AUC_PR=0.9400
+2023-02-20 02:33:44,585 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=21; Best AUCROC=0.9916.
+2023-02-20 02:33:44,585 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 02:33:44,843 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 23 [0/2689903 (0%)]	Loss: 0.072566
+2023-02-20 02:38:39,049 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 23 [960000/2689903 (36%)]	Loss: 0.075539
+2023-02-20 02:44:02,307 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 23 [1920000/2689903 (71%)]	Loss: 0.037247
+2023-02-20 02:48:32,474 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 02:48:32,475 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 02:49:46,279 - main_train_Model_EL.py[line:222] - INFO: Epoch 23 accuracy=0.9796,precision=0.8900,recall=0.8849,F1_score=0.8874,AUC_ROC=0.9914,AUC_PR=0.9411
+2023-02-20 02:49:46,279 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=21; Best AUCROC=0.9916.
+2023-02-20 02:49:46,279 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 02:49:46,544 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 24 [0/2689903 (0%)]	Loss: 0.048276
+2023-02-20 02:54:25,769 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 24 [960000/2689903 (36%)]	Loss: 0.019149
+2023-02-20 02:59:16,883 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 24 [1920000/2689903 (71%)]	Loss: 0.036401
+2023-02-20 03:02:51,272 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 03:02:51,273 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 03:04:04,027 - main_train_Model_EL.py[line:222] - INFO: Epoch 24 accuracy=0.9797,precision=0.8993,recall=0.8748,F1_score=0.8869,AUC_ROC=0.9916,AUC_PR=0.9418
+2023-02-20 03:04:04,036 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=24; Best AUCROC=0.9916.
+2023-02-20 03:04:04,036 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 03:04:04,293 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 25 [0/2689903 (0%)]	Loss: 0.026548
+2023-02-20 03:09:00,123 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 25 [960000/2689903 (36%)]	Loss: 0.062387
+2023-02-20 03:13:47,207 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 25 [1920000/2689903 (71%)]	Loss: 0.042157
+2023-02-20 03:17:43,164 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 03:17:43,165 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 03:18:56,430 - main_train_Model_EL.py[line:222] - INFO: Epoch 25 accuracy=0.9801,precision=0.8973,recall=0.8819,F1_score=0.8895,AUC_ROC=0.9918,AUC_PR=0.9426
+2023-02-20 03:18:56,438 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 03:18:56,438 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 03:18:56,687 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 26 [0/2689903 (0%)]	Loss: 0.057121
+2023-02-20 03:23:38,248 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 26 [960000/2689903 (36%)]	Loss: 0.049663
+2023-02-20 03:28:58,455 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 26 [1920000/2689903 (71%)]	Loss: 0.020878
+2023-02-20 03:33:28,082 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 03:33:28,082 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 03:34:44,506 - main_train_Model_EL.py[line:222] - INFO: Epoch 26 accuracy=0.9794,precision=0.9033,recall=0.8662,F1_score=0.8844,AUC_ROC=0.9915,AUC_PR=0.9413
+2023-02-20 03:34:44,506 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 03:34:44,506 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 03:34:44,766 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 27 [0/2689903 (0%)]	Loss: 0.048326
+2023-02-20 03:39:46,744 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 27 [960000/2689903 (36%)]	Loss: 0.048430
+2023-02-20 03:44:41,227 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 27 [1920000/2689903 (71%)]	Loss: 0.100455
+2023-02-20 03:48:38,873 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 03:48:38,874 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 03:49:52,033 - main_train_Model_EL.py[line:222] - INFO: Epoch 27 accuracy=0.9797,precision=0.8929,recall=0.8825,F1_score=0.8877,AUC_ROC=0.9916,AUC_PR=0.9418
+2023-02-20 03:49:52,034 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 03:49:52,034 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 03:49:52,305 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 28 [0/2689903 (0%)]	Loss: 0.047427
+2023-02-20 03:55:19,015 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 28 [960000/2689903 (36%)]	Loss: 0.026396
+2023-02-20 04:00:37,788 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 28 [1920000/2689903 (71%)]	Loss: 0.051073
+2023-02-20 04:04:30,024 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 04:04:30,025 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 04:05:42,719 - main_train_Model_EL.py[line:222] - INFO: Epoch 28 accuracy=0.9799,precision=0.9084,recall=0.8657,F1_score=0.8866,AUC_ROC=0.9917,AUC_PR=0.9421
+2023-02-20 04:05:42,719 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 04:05:42,719 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 04:05:42,989 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 29 [0/2689903 (0%)]	Loss: 0.038121
+2023-02-20 04:11:08,453 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 29 [960000/2689903 (36%)]	Loss: 0.045493
+2023-02-20 04:16:23,871 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 29 [1920000/2689903 (71%)]	Loss: 0.024168
+2023-02-20 04:20:41,373 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 04:20:41,374 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 04:21:54,170 - main_train_Model_EL.py[line:222] - INFO: Epoch 29 accuracy=0.9797,precision=0.8871,recall=0.8895,F1_score=0.8883,AUC_ROC=0.9917,AUC_PR=0.9425
+2023-02-20 04:21:54,171 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 04:21:54,171 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 04:21:54,519 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 30 [0/2689903 (0%)]	Loss: 0.059287
+2023-02-20 04:27:04,075 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 30 [960000/2689903 (36%)]	Loss: 0.039889
+2023-02-20 04:32:01,182 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 30 [1920000/2689903 (71%)]	Loss: 0.018532
+2023-02-20 04:35:53,844 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 04:35:53,844 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 04:37:07,729 - main_train_Model_EL.py[line:222] - INFO: Epoch 30 accuracy=0.9787,precision=0.8595,recall=0.9151,F1_score=0.8864,AUC_ROC=0.9917,AUC_PR=0.9422
+2023-02-20 04:37:07,729 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 04:37:07,730 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 04:37:07,999 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 31 [0/2689903 (0%)]	Loss: 0.024293
+2023-02-20 04:42:14,449 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 31 [960000/2689903 (36%)]	Loss: 0.023086
+2023-02-20 04:47:45,191 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 31 [1920000/2689903 (71%)]	Loss: 0.022770
+2023-02-20 04:52:08,875 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 04:52:08,876 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 04:53:21,814 - main_train_Model_EL.py[line:222] - INFO: Epoch 31 accuracy=0.9798,precision=0.8888,recall=0.8892,F1_score=0.8890,AUC_ROC=0.9917,AUC_PR=0.9418
+2023-02-20 04:53:21,815 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 04:53:21,815 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 04:53:22,062 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 32 [0/2689903 (0%)]	Loss: 0.045713
+2023-02-20 04:57:31,690 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 32 [960000/2689903 (36%)]	Loss: 0.024974
+2023-02-20 05:02:11,355 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 32 [1920000/2689903 (71%)]	Loss: 0.048054
+2023-02-20 05:06:03,850 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 05:06:03,851 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 05:07:17,055 - main_train_Model_EL.py[line:222] - INFO: Epoch 32 accuracy=0.9797,precision=0.8906,recall=0.8852,F1_score=0.8879,AUC_ROC=0.9917,AUC_PR=0.9423
+2023-02-20 05:07:17,055 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 05:07:17,055 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 05:07:17,323 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 33 [0/2689903 (0%)]	Loss: 0.022084
+2023-02-20 05:12:40,881 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 33 [960000/2689903 (36%)]	Loss: 0.020697
+2023-02-20 05:17:47,350 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 33 [1920000/2689903 (71%)]	Loss: 0.033975
+2023-02-20 05:22:14,711 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 05:22:14,711 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 05:23:27,850 - main_train_Model_EL.py[line:222] - INFO: Epoch 33 accuracy=0.9796,precision=0.8881,recall=0.8872,F1_score=0.8877,AUC_ROC=0.9915,AUC_PR=0.9414
+2023-02-20 05:23:27,850 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 05:23:27,850 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 05:23:28,082 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 34 [0/2689903 (0%)]	Loss: 0.029416
+2023-02-20 05:28:49,814 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 34 [960000/2689903 (36%)]	Loss: 0.036766
+2023-02-20 05:33:48,097 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 34 [1920000/2689903 (71%)]	Loss: 0.037373
+2023-02-20 05:37:55,368 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 05:37:55,369 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 05:39:08,807 - main_train_Model_EL.py[line:222] - INFO: Epoch 34 accuracy=0.9791,precision=0.8724,recall=0.9025,F1_score=0.8872,AUC_ROC=0.9915,AUC_PR=0.9411
+2023-02-20 05:39:08,807 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 05:39:08,807 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 05:39:09,068 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 35 [0/2689903 (0%)]	Loss: 0.053839
+2023-02-20 05:44:10,341 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 35 [960000/2689903 (36%)]	Loss: 0.043959
+2023-02-20 05:49:10,238 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 35 [1920000/2689903 (71%)]	Loss: 0.048993
+2023-02-20 05:52:55,078 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 05:52:55,079 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 05:54:08,451 - main_train_Model_EL.py[line:222] - INFO: Epoch 35 accuracy=0.9797,precision=0.9011,recall=0.8727,F1_score=0.8867,AUC_ROC=0.9916,AUC_PR=0.9414
+2023-02-20 05:54:08,451 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 05:54:08,451 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 05:54:08,706 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 36 [0/2689903 (0%)]	Loss: 0.035134
+2023-02-20 05:59:06,650 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 36 [960000/2689903 (36%)]	Loss: 0.031154
+2023-02-20 06:03:59,959 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 36 [1920000/2689903 (71%)]	Loss: 0.013703
+2023-02-20 06:07:49,503 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 06:07:49,504 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 06:09:02,679 - main_train_Model_EL.py[line:222] - INFO: Epoch 36 accuracy=0.9798,precision=0.8873,recall=0.8903,F1_score=0.8888,AUC_ROC=0.9917,AUC_PR=0.9421
+2023-02-20 06:09:02,679 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 06:09:02,679 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 06:09:02,939 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 37 [0/2689903 (0%)]	Loss: 0.030592
+2023-02-20 06:13:56,395 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 37 [960000/2689903 (36%)]	Loss: 0.046753
+2023-02-20 06:18:23,739 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 37 [1920000/2689903 (71%)]	Loss: 0.046819
+2023-02-20 06:22:09,092 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 06:22:09,093 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 06:23:24,088 - main_train_Model_EL.py[line:222] - INFO: Epoch 37 accuracy=0.9794,precision=0.8864,recall=0.8873,F1_score=0.8868,AUC_ROC=0.9914,AUC_PR=0.9396
+2023-02-20 06:23:24,088 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 06:23:24,089 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 06:23:24,346 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 38 [0/2689903 (0%)]	Loss: 0.044085
+2023-02-20 06:28:37,442 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 38 [960000/2689903 (36%)]	Loss: 0.058122
+2023-02-20 06:33:16,728 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 38 [1920000/2689903 (71%)]	Loss: 0.035092
+2023-02-20 06:37:37,817 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 06:37:37,818 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 06:38:51,397 - main_train_Model_EL.py[line:222] - INFO: Epoch 38 accuracy=0.9794,precision=0.8886,recall=0.8841,F1_score=0.8863,AUC_ROC=0.9912,AUC_PR=0.9400
+2023-02-20 06:38:51,398 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 06:38:51,398 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 06:38:51,664 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 39 [0/2689903 (0%)]	Loss: 0.035558
+2023-02-20 06:43:54,889 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 39 [960000/2689903 (36%)]	Loss: 0.026528
+2023-02-20 06:48:40,971 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 39 [1920000/2689903 (71%)]	Loss: 0.039466
+2023-02-20 06:52:36,650 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 06:52:36,651 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 06:53:50,753 - main_train_Model_EL.py[line:222] - INFO: Epoch 39 accuracy=0.9796,precision=0.8821,recall=0.8951,F1_score=0.8886,AUC_ROC=0.9915,AUC_PR=0.9410
+2023-02-20 06:53:50,753 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 06:53:50,753 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 06:53:51,003 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 40 [0/2689903 (0%)]	Loss: 0.013850
+2023-02-20 06:58:57,347 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 40 [960000/2689903 (36%)]	Loss: 0.036988
+2023-02-20 07:03:48,390 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 40 [1920000/2689903 (71%)]	Loss: 0.063795
+2023-02-20 07:08:11,145 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 07:08:11,146 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 07:09:28,458 - main_train_Model_EL.py[line:222] - INFO: Epoch 40 accuracy=0.9795,precision=0.8799,recall=0.8968,F1_score=0.8883,AUC_ROC=0.9915,AUC_PR=0.9414
+2023-02-20 07:09:28,458 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 07:09:28,459 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 07:09:28,725 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 41 [0/2689903 (0%)]	Loss: 0.027998
+2023-02-20 07:14:36,868 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 41 [960000/2689903 (36%)]	Loss: 0.029177
+2023-02-20 07:19:43,900 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 41 [1920000/2689903 (71%)]	Loss: 0.019176
+2023-02-20 07:23:36,502 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 07:23:36,502 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 07:24:50,391 - main_train_Model_EL.py[line:222] - INFO: Epoch 41 accuracy=0.9794,precision=0.9003,recall=0.8701,F1_score=0.8850,AUC_ROC=0.9914,AUC_PR=0.9406
+2023-02-20 07:24:50,391 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 07:24:50,391 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 07:24:50,654 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 42 [0/2689903 (0%)]	Loss: 0.034570
+2023-02-20 07:29:41,347 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 42 [960000/2689903 (36%)]	Loss: 0.049776
+2023-02-20 07:34:43,204 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 42 [1920000/2689903 (71%)]	Loss: 0.036117
+2023-02-20 07:38:27,893 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 07:38:27,894 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 07:39:40,792 - main_train_Model_EL.py[line:222] - INFO: Epoch 42 accuracy=0.9792,precision=0.8753,recall=0.8987,F1_score=0.8869,AUC_ROC=0.9913,AUC_PR=0.9404
+2023-02-20 07:39:40,793 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 07:39:40,793 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 07:39:41,060 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 43 [0/2689903 (0%)]	Loss: 0.015135
+2023-02-20 07:45:14,501 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 43 [960000/2689903 (36%)]	Loss: 0.054512
+2023-02-20 07:50:36,325 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 43 [1920000/2689903 (71%)]	Loss: 0.034266
+2023-02-20 07:55:04,855 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 07:55:04,856 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 07:56:19,373 - main_train_Model_EL.py[line:222] - INFO: Epoch 43 accuracy=0.9789,precision=0.8756,recall=0.8950,F1_score=0.8851,AUC_ROC=0.9912,AUC_PR=0.9389
+2023-02-20 07:56:19,373 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 07:56:19,373 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 07:56:19,633 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 44 [0/2689903 (0%)]	Loss: 0.039282
+2023-02-20 08:01:02,091 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 44 [960000/2689903 (36%)]	Loss: 0.014479
+2023-02-20 08:06:07,229 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 44 [1920000/2689903 (71%)]	Loss: 0.020483
+2023-02-20 08:09:57,254 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 08:09:57,255 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 08:11:12,548 - main_train_Model_EL.py[line:222] - INFO: Epoch 44 accuracy=0.9790,precision=0.8711,recall=0.9029,F1_score=0.8867,AUC_ROC=0.9914,AUC_PR=0.9406
+2023-02-20 08:11:12,548 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 08:11:12,548 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 08:11:12,815 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 45 [0/2689903 (0%)]	Loss: 0.027966
+2023-02-20 08:16:38,879 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 45 [960000/2689903 (36%)]	Loss: 0.029885
+2023-02-20 08:21:43,616 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 45 [1920000/2689903 (71%)]	Loss: 0.015256
+2023-02-20 08:25:55,501 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 08:25:55,501 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 08:27:09,335 - main_train_Model_EL.py[line:222] - INFO: Epoch 45 accuracy=0.9786,precision=0.9093,recall=0.8496,F1_score=0.8785,AUC_ROC=0.9913,AUC_PR=0.9396
+2023-02-20 08:27:09,335 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 08:27:09,335 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 08:27:09,591 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 46 [0/2689903 (0%)]	Loss: 0.032330
+2023-02-20 08:32:32,910 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 46 [960000/2689903 (36%)]	Loss: 0.037718
+2023-02-20 08:37:47,262 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 46 [1920000/2689903 (71%)]	Loss: 0.029206
+2023-02-20 08:41:57,392 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 08:41:57,393 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 08:43:11,364 - main_train_Model_EL.py[line:222] - INFO: Epoch 46 accuracy=0.9794,precision=0.8848,recall=0.8887,F1_score=0.8868,AUC_ROC=0.9913,AUC_PR=0.9403
+2023-02-20 08:43:11,364 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 08:43:11,364 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 08:43:11,616 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 47 [0/2689903 (0%)]	Loss: 0.041564
+2023-02-20 08:48:32,604 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 47 [960000/2689903 (36%)]	Loss: 0.025759
+2023-02-20 08:53:44,182 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 47 [1920000/2689903 (71%)]	Loss: 0.045305
+2023-02-20 08:58:06,252 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 08:58:06,253 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 08:59:20,038 - main_train_Model_EL.py[line:222] - INFO: Epoch 47 accuracy=0.9793,precision=0.8884,recall=0.8831,F1_score=0.8857,AUC_ROC=0.9914,AUC_PR=0.9399
+2023-02-20 08:59:20,038 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 08:59:20,038 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 08:59:20,296 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 48 [0/2689903 (0%)]	Loss: 0.023952
+2023-02-20 09:04:42,592 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 48 [960000/2689903 (36%)]	Loss: 0.028230
+2023-02-20 09:10:03,684 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 48 [1920000/2689903 (71%)]	Loss: 0.030041
+2023-02-20 09:13:54,023 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 09:13:54,023 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 09:15:12,348 - main_train_Model_EL.py[line:222] - INFO: Epoch 48 accuracy=0.9785,precision=0.8665,recall=0.9020,F1_score=0.8839,AUC_ROC=0.9911,AUC_PR=0.9393
+2023-02-20 09:15:12,349 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 09:15:12,349 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 09:15:12,630 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 49 [0/2689903 (0%)]	Loss: 0.027713
+2023-02-20 09:19:59,686 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 49 [960000/2689903 (36%)]	Loss: 0.036578
+2023-02-20 09:24:57,438 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 49 [1920000/2689903 (71%)]	Loss: 0.044357
+2023-02-20 09:29:10,593 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 09:29:10,593 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 09:30:23,511 - main_train_Model_EL.py[line:222] - INFO: Epoch 49 accuracy=0.9785,precision=0.8682,recall=0.9007,F1_score=0.8841,AUC_ROC=0.9910,AUC_PR=0.9387
+2023-02-20 09:30:23,511 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 09:30:23,512 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 09:30:23,772 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 50 [0/2689903 (0%)]	Loss: 0.016403
+2023-02-20 09:35:14,164 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 50 [960000/2689903 (36%)]	Loss: 0.027291
+2023-02-20 09:40:11,690 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 50 [1920000/2689903 (71%)]	Loss: 0.025225
+2023-02-20 09:44:16,624 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 09:44:16,625 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 09:45:29,852 - main_train_Model_EL.py[line:222] - INFO: Epoch 50 accuracy=0.9795,precision=0.8928,recall=0.8801,F1_score=0.8864,AUC_ROC=0.9915,AUC_PR=0.9406
+2023-02-20 09:45:29,852 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 09:45:29,852 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 09:45:30,125 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 51 [0/2689903 (0%)]	Loss: 0.023849
+2023-02-20 09:50:56,589 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 51 [960000/2689903 (36%)]	Loss: 0.046435
+2023-02-20 09:56:07,161 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 51 [1920000/2689903 (71%)]	Loss: 0.021793
+2023-02-20 10:00:17,270 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 10:00:17,271 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 10:01:37,858 - main_train_Model_EL.py[line:222] - INFO: Epoch 51 accuracy=0.9789,precision=0.8979,recall=0.8670,F1_score=0.8822,AUC_ROC=0.9912,AUC_PR=0.9390
+2023-02-20 10:01:37,858 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 10:01:37,858 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 10:01:38,130 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 52 [0/2689903 (0%)]	Loss: 0.029151
+2023-02-20 10:06:51,662 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 52 [960000/2689903 (36%)]	Loss: 0.013907
+2023-02-20 10:12:13,583 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 52 [1920000/2689903 (71%)]	Loss: 0.022277
+2023-02-20 10:16:36,133 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 10:16:36,134 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 10:17:49,224 - main_train_Model_EL.py[line:222] - INFO: Epoch 52 accuracy=0.9783,precision=0.9196,recall=0.8337,F1_score=0.8746,AUC_ROC=0.9915,AUC_PR=0.9400
+2023-02-20 10:17:49,224 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 10:17:49,224 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 10:17:49,488 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 53 [0/2689903 (0%)]	Loss: 0.032133
+2023-02-20 10:23:02,931 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 53 [960000/2689903 (36%)]	Loss: 0.021600
+2023-02-20 10:28:19,761 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 53 [1920000/2689903 (71%)]	Loss: 0.046977
+2023-02-20 10:32:48,118 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 10:32:48,119 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 10:34:00,733 - main_train_Model_EL.py[line:222] - INFO: Epoch 53 accuracy=0.9757,precision=0.8267,recall=0.9264,F1_score=0.8737,AUC_ROC=0.9911,AUC_PR=0.9378
+2023-02-20 10:34:00,733 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 10:34:00,733 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 10:34:00,996 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 54 [0/2689903 (0%)]	Loss: 0.019675
+2023-02-20 10:39:23,147 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 54 [960000/2689903 (36%)]	Loss: 0.028800
+2023-02-20 10:44:31,445 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 54 [1920000/2689903 (71%)]	Loss: 0.046623
+2023-02-20 10:48:45,168 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 10:48:45,169 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 10:50:00,342 - main_train_Model_EL.py[line:222] - INFO: Epoch 54 accuracy=0.9791,precision=0.8925,recall=0.8760,F1_score=0.8841,AUC_ROC=0.9912,AUC_PR=0.9385
+2023-02-20 10:50:00,342 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 10:50:00,342 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 10:50:00,613 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 55 [0/2689903 (0%)]	Loss: 0.050937
+2023-02-20 10:55:05,048 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 55 [960000/2689903 (36%)]	Loss: 0.032874
+2023-02-20 10:59:50,629 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 55 [1920000/2689903 (71%)]	Loss: 0.016882
+2023-02-20 11:04:12,964 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 11:04:12,965 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 11:05:28,201 - main_train_Model_EL.py[line:222] - INFO: Epoch 55 accuracy=0.9792,precision=0.8930,recall=0.8762,F1_score=0.8845,AUC_ROC=0.9912,AUC_PR=0.9391
+2023-02-20 11:05:28,202 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 11:05:28,202 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 11:05:28,467 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 56 [0/2689903 (0%)]	Loss: 0.020100
+2023-02-20 11:10:41,157 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 56 [960000/2689903 (36%)]	Loss: 0.012033
+2023-02-20 11:15:26,998 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 56 [1920000/2689903 (71%)]	Loss: 0.021574
+2023-02-20 11:19:11,630 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 11:19:11,631 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 11:20:27,585 - main_train_Model_EL.py[line:222] - INFO: Epoch 56 accuracy=0.9787,precision=0.8905,recall=0.8735,F1_score=0.8819,AUC_ROC=0.9909,AUC_PR=0.9376
+2023-02-20 11:20:27,586 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 11:20:27,586 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 11:20:27,851 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 57 [0/2689903 (0%)]	Loss: 0.025486
+2023-02-20 11:25:45,966 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 57 [960000/2689903 (36%)]	Loss: 0.038693
+2023-02-20 11:31:11,812 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 57 [1920000/2689903 (71%)]	Loss: 0.026905
+2023-02-20 11:35:24,076 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 11:35:24,076 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 11:36:38,110 - main_train_Model_EL.py[line:222] - INFO: Epoch 57 accuracy=0.9790,precision=0.8831,recall=0.8862,F1_score=0.8846,AUC_ROC=0.9910,AUC_PR=0.9381
+2023-02-20 11:36:38,110 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 11:36:38,110 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 11:36:38,379 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 58 [0/2689903 (0%)]	Loss: 0.014736
+2023-02-20 11:41:26,221 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 58 [960000/2689903 (36%)]	Loss: 0.017827
+2023-02-20 11:46:54,364 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 58 [1920000/2689903 (71%)]	Loss: 0.019024
+2023-02-20 11:51:22,964 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 11:51:22,965 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 11:52:39,901 - main_train_Model_EL.py[line:222] - INFO: Epoch 58 accuracy=0.9789,precision=0.8868,recall=0.8799,F1_score=0.8833,AUC_ROC=0.9911,AUC_PR=0.9380
+2023-02-20 11:52:39,901 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 11:52:39,901 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 11:52:40,164 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 59 [0/2689903 (0%)]	Loss: 0.025667
+2023-02-20 11:57:46,748 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 59 [960000/2689903 (36%)]	Loss: 0.020683
+2023-02-20 12:02:53,210 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 59 [1920000/2689903 (71%)]	Loss: 0.046502
+2023-02-20 12:07:09,561 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 12:07:09,562 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 12:08:27,187 - main_train_Model_EL.py[line:222] - INFO: Epoch 59 accuracy=0.9789,precision=0.8769,recall=0.8936,F1_score=0.8852,AUC_ROC=0.9911,AUC_PR=0.9388
+2023-02-20 12:08:27,187 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 12:08:27,187 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 12:08:27,457 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 60 [0/2689903 (0%)]	Loss: 0.009423
+2023-02-20 12:13:31,127 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 60 [960000/2689903 (36%)]	Loss: 0.014375
+2023-02-20 12:18:45,940 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 60 [1920000/2689903 (71%)]	Loss: 0.017060
+2023-02-20 12:22:58,839 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 12:22:58,840 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 12:24:13,062 - main_train_Model_EL.py[line:222] - INFO: Epoch 60 accuracy=0.9786,precision=0.8672,recall=0.9027,F1_score=0.8846,AUC_ROC=0.9913,AUC_PR=0.9391
+2023-02-20 12:24:13,063 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 12:24:13,063 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 12:24:13,319 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 61 [0/2689903 (0%)]	Loss: 0.024815
+2023-02-20 12:28:57,109 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 61 [960000/2689903 (36%)]	Loss: 0.019828
+2023-02-20 12:33:38,215 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 61 [1920000/2689903 (71%)]	Loss: 0.034415
+2023-02-20 12:37:37,227 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 12:37:37,228 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 12:38:51,425 - main_train_Model_EL.py[line:222] - INFO: Epoch 61 accuracy=0.9792,precision=0.8789,recall=0.8944,F1_score=0.8866,AUC_ROC=0.9913,AUC_PR=0.9396
+2023-02-20 12:38:51,425 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 12:38:51,425 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 12:38:51,678 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 62 [0/2689903 (0%)]	Loss: 0.018772
+2023-02-20 12:43:56,377 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 62 [960000/2689903 (36%)]	Loss: 0.022570
+2023-02-20 12:48:47,228 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 62 [1920000/2689903 (71%)]	Loss: 0.015306
+2023-02-20 12:52:50,726 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 12:52:50,727 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 12:54:04,016 - main_train_Model_EL.py[line:222] - INFO: Epoch 62 accuracy=0.9790,precision=0.8888,recall=0.8790,F1_score=0.8838,AUC_ROC=0.9912,AUC_PR=0.9388
+2023-02-20 12:54:04,016 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 12:54:04,016 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 12:54:04,281 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 63 [0/2689903 (0%)]	Loss: 0.020969
+2023-02-20 12:59:12,798 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 63 [960000/2689903 (36%)]	Loss: 0.010618
+2023-02-20 13:04:01,086 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 63 [1920000/2689903 (71%)]	Loss: 0.014955
+2023-02-20 13:08:30,214 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 13:08:30,215 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 13:09:44,644 - main_train_Model_EL.py[line:222] - INFO: Epoch 63 accuracy=0.9763,precision=0.8368,recall=0.9188,F1_score=0.8759,AUC_ROC=0.9907,AUC_PR=0.9362
+2023-02-20 13:09:44,644 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 13:09:44,644 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 13:09:44,916 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 64 [0/2689903 (0%)]	Loss: 0.020445
+2023-02-20 13:14:26,115 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 64 [960000/2689903 (36%)]	Loss: 0.030615
+2023-02-20 13:19:10,033 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 64 [1920000/2689903 (71%)]	Loss: 0.019073
+2023-02-20 13:23:45,359 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 13:23:45,359 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 13:25:57,393 - main_train_Model_EL.py[line:222] - INFO: Epoch 64 accuracy=0.9790,precision=0.8924,recall=0.8738,F1_score=0.8830,AUC_ROC=0.9912,AUC_PR=0.9386
+2023-02-20 13:25:57,394 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 13:25:57,394 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 13:25:57,768 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 65 [0/2689903 (0%)]	Loss: 0.011944
+2023-02-20 13:34:54,841 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 65 [960000/2689903 (36%)]	Loss: 0.019625
+2023-02-20 13:42:45,693 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 65 [1920000/2689903 (71%)]	Loss: 0.007467
+2023-02-20 13:46:42,048 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 13:46:42,048 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 13:47:57,490 - main_train_Model_EL.py[line:222] - INFO: Epoch 65 accuracy=0.9767,precision=0.8432,recall=0.9139,F1_score=0.8772,AUC_ROC=0.9907,AUC_PR=0.9362
+2023-02-20 13:47:57,490 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 13:47:57,491 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 13:47:57,749 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 66 [0/2689903 (0%)]	Loss: 0.008335
+2023-02-20 13:53:02,239 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 66 [960000/2689903 (36%)]	Loss: 0.013316
+2023-02-20 13:57:58,112 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 66 [1920000/2689903 (71%)]	Loss: 0.026844
+2023-02-20 14:02:26,000 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 14:02:26,001 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 14:03:42,189 - main_train_Model_EL.py[line:222] - INFO: Epoch 66 accuracy=0.9784,precision=0.8713,recall=0.8947,F1_score=0.8829,AUC_ROC=0.9910,AUC_PR=0.9373
+2023-02-20 14:03:42,189 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 14:03:42,190 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 14:03:42,457 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 67 [0/2689903 (0%)]	Loss: 0.021442
+2023-02-20 14:08:27,177 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 67 [960000/2689903 (36%)]	Loss: 0.015053
+2023-02-20 14:13:12,737 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 67 [1920000/2689903 (71%)]	Loss: 0.011638
+2023-02-20 14:17:22,279 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 14:17:22,280 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 14:18:36,308 - main_train_Model_EL.py[line:222] - INFO: Epoch 67 accuracy=0.9790,precision=0.8859,recall=0.8830,F1_score=0.8845,AUC_ROC=0.9910,AUC_PR=0.9384
+2023-02-20 14:18:36,309 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 14:18:36,309 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 14:18:36,567 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 68 [0/2689903 (0%)]	Loss: 0.019708
+2023-02-20 14:23:52,836 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 68 [960000/2689903 (36%)]	Loss: 0.019824
+2023-02-20 14:29:21,424 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 68 [1920000/2689903 (71%)]	Loss: 0.030883
+2023-02-20 14:33:51,396 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 14:33:51,397 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 14:35:05,698 - main_train_Model_EL.py[line:222] - INFO: Epoch 68 accuracy=0.9784,precision=0.8703,recall=0.8957,F1_score=0.8828,AUC_ROC=0.9909,AUC_PR=0.9376
+2023-02-20 14:35:05,698 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 14:35:05,698 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 14:35:05,959 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 69 [0/2689903 (0%)]	Loss: 0.014950
+2023-02-20 14:39:54,136 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 69 [960000/2689903 (36%)]	Loss: 0.043700
+2023-02-20 14:44:43,302 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 69 [1920000/2689903 (71%)]	Loss: 0.011806
+2023-02-20 14:49:13,661 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 14:49:13,661 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 14:50:27,337 - main_train_Model_EL.py[line:222] - INFO: Epoch 69 accuracy=0.9689,precision=0.7700,recall=0.9377,F1_score=0.8456,AUC_ROC=0.9898,AUC_PR=0.9307
+2023-02-20 14:50:27,337 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 14:50:27,337 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 14:50:27,603 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 70 [0/2689903 (0%)]	Loss: 0.024964
+2023-02-20 14:55:05,916 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 70 [960000/2689903 (36%)]	Loss: 0.017445
+2023-02-20 14:59:58,108 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 70 [1920000/2689903 (71%)]	Loss: 0.013176
+2023-02-20 15:03:43,495 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 15:03:43,496 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 15:04:56,758 - main_train_Model_EL.py[line:222] - INFO: Epoch 70 accuracy=0.9780,precision=0.8668,recall=0.8962,F1_score=0.8813,AUC_ROC=0.9908,AUC_PR=0.9369
+2023-02-20 15:04:56,758 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 15:04:56,759 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 15:04:57,016 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 71 [0/2689903 (0%)]	Loss: 0.008923
+2023-02-20 15:09:49,131 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 71 [960000/2689903 (36%)]	Loss: 0.033306
+2023-02-20 15:14:49,913 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 71 [1920000/2689903 (71%)]	Loss: 0.013392
+2023-02-20 15:19:18,960 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 15:19:18,961 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 15:20:32,966 - main_train_Model_EL.py[line:222] - INFO: Epoch 71 accuracy=0.9787,precision=0.8887,recall=0.8755,F1_score=0.8820,AUC_ROC=0.9909,AUC_PR=0.9367
+2023-02-20 15:20:32,966 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 15:20:32,966 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 15:20:33,220 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 72 [0/2689903 (0%)]	Loss: 0.009554
+2023-02-20 15:25:26,050 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 72 [960000/2689903 (36%)]	Loss: 0.010173
+2023-02-20 15:30:23,765 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 72 [1920000/2689903 (71%)]	Loss: 0.031451
+2023-02-20 15:34:09,867 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 15:34:09,867 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 15:35:22,022 - main_train_Model_EL.py[line:222] - INFO: Epoch 72 accuracy=0.9783,precision=0.8687,recall=0.8962,F1_score=0.8822,AUC_ROC=0.9908,AUC_PR=0.9365
+2023-02-20 15:35:22,022 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 15:35:22,022 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 15:35:22,289 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 73 [0/2689903 (0%)]	Loss: 0.023197
+2023-02-20 15:40:37,506 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 73 [960000/2689903 (36%)]	Loss: 0.013493
+2023-02-20 15:46:11,821 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 73 [1920000/2689903 (71%)]	Loss: 0.023804
+2023-02-20 15:50:18,195 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 15:50:18,195 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 15:51:31,076 - main_train_Model_EL.py[line:222] - INFO: Epoch 73 accuracy=0.9789,precision=0.8849,recall=0.8826,F1_score=0.8837,AUC_ROC=0.9911,AUC_PR=0.9385
+2023-02-20 15:51:31,076 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 15:51:31,076 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 15:51:31,337 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 74 [0/2689903 (0%)]	Loss: 0.006257
+2023-02-20 15:56:26,475 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 74 [960000/2689903 (36%)]	Loss: 0.011898
+2023-02-20 16:01:58,134 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 74 [1920000/2689903 (71%)]	Loss: 0.015146
+2023-02-20 16:06:28,417 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 16:06:28,417 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 16:07:41,236 - main_train_Model_EL.py[line:222] - INFO: Epoch 74 accuracy=0.9787,precision=0.9007,recall=0.8609,F1_score=0.8804,AUC_ROC=0.9911,AUC_PR=0.9380
+2023-02-20 16:07:41,236 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 16:07:41,236 - main_train_Model_EL.py[line:21] - INFO: Training on 2689903 samples...
+2023-02-20 16:07:41,498 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 75 [0/2689903 (0%)]	Loss: 0.020561
+2023-02-20 16:12:35,029 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 75 [960000/2689903 (36%)]	Loss: 0.023217
+2023-02-20 16:17:58,002 - main_train_Model_EL.py[line:49] - INFO: Train epoch: 75 [1920000/2689903 (71%)]	Loss: 0.020459
+2023-02-20 16:22:15,103 - main_train_Model_EL.py[line:215] - INFO: predicting for valid data
+2023-02-20 16:22:15,104 - main_train_Model_EL.py[line:58] - INFO: Make prediction for 672481 samples...
+2023-02-20 16:23:30,282 - main_train_Model_EL.py[line:222] - INFO: Epoch 75 accuracy=0.9780,precision=0.8653,recall=0.8974,F1_score=0.8810,AUC_ROC=0.9907,AUC_PR=0.9361
+2023-02-20 16:23:30,282 - main_train_Model_EL.py[line:239] - INFO: BestEpoch=25; Best AUCROC=0.9918.
+2023-02-20 16:23:30,282 - main_train_Model_EL.py[line:254] - INFO: Early Stop.

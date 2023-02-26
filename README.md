@@ -41,7 +41,7 @@ pip install -r dependencies.txt
   python IEPAPI_predict.py --input test.csv --output output_demo.csv
   ```
 
-- --input: the first column is the sequence of the peptide, the second column is the name of the HLA, and the third column is the pseudo-sequence of the HLA. The file ". /data/pseudoSequence(ELIM).csv" records the pseudo-sequences of all HLA isoforms used in this study. For other HLA isoforms, their pseudo-sequences can be found in the file ". /data/NetMHCpan4.1/MHC_pseudo.dat".
+- --input: the first column is the sequence of the peptide, the second column is the name of the HLA, and the third column is the pseudo-sequence of the HLA. The file ". /data/pseudoSequence(ELIM).csv" records the pseudo sequences of all HLA isoforms used in this study. For other HLA isoforms, their pseudo sequences can be found in the file ". /data/NetMHCpan4.1/MHC_pseudo.dat".
 
 - --output: the path where you want to save the prediction results. Here, the expected output will be saved in the file "./output_demo.csv".
   

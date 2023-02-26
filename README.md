@@ -6,7 +6,7 @@ _ _ _ _
 
 #### 1) Dependencies and operating systems
 
-python(version=3.7.9); torch(version=1.8.0)；torchvision(version==0.2.2); numpy(version==1.18.5); pandas(version=1.2.4); tqdm(version=4.19.9); matplotlib(version=3.3.2); seaborn(version=0.11.1);weblogo(version=3.7.12)
+python(version=3.7.9); torch(version=1.8.0)；torchvision(version==0.2.2); numpy(version==1.18.5); pandas(version=1.2.4); tqdm(version=4.19.9); matplotlib(version=3.3.2); seaborn(version=0.11.1)
 
 It is recommended to use the linux system, here we used Centos Linux release 7.9.2009(Core) system.
 
@@ -23,7 +23,7 @@ This is the 1th version which has been tested on independent antigen presentatio
 Download the source code and unzip it. Simply enter the directory of IEPAPI and install all required dependencies on your operating system:
 
 ```console
-cd ./IEPAPI-main
+cd ./IEPAPI-master
 pip install -r dependencies.txt
 ```
 
@@ -52,7 +52,7 @@ pip install -r dependencies.txt
 - Run the command to obtain the immune epitope motif for the specified HLA：
   
   ```console
-  python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY --require_pdf True
+  python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY -- require_pdf True
   ```
 
 - --MHC: the name of the MHC molecule
@@ -66,3 +66,35 @@ pip install -r dependencies.txt
   <img title="" src="./HLA-A1101_heatmap(EL).jpg" alt="Alternative text" width="202"><img title="" src="HLA-A1101_heatmap(IM).jpg" alt="Alternative text" width="202">
 
 <img title="" src="HLA-A_11_01_logo(EL).jpg" alt="Alternative text" width="203"><img title="" src="HLA-A_11_01_logo(IM).jpg" alt="Alternative text" width="200">
+
+## 4. Reproduction guidance
+
+a) Download all data from the Mendeley Data website (https://data.mendeley.com/datasets/fwxg5mgntn) and place the data in the ". /data/processed" directory
+
+b）Training the IEPAPI-EL model
+
+```console
+ python  main_train_Model_EL.py   --fold 0   --index 0
+ python  main_train_Model_EL.py   --fold 1   --index 0
+ python  main_train_Model_EL.py   --fold 2   --index 0
+ python  main_train_Model_EL.py   --fold 3   --index 0
+ python  main_train_Model_EL.py   --fold 4   --index 0
+```
+
+c）Training the IEPAPI-IM model
+
+```console
+ python  main_train_Model_IM.py   --fold 0   --index 0
+ python  main_train_Model_IM.py   --fold 1   --index 0
+ python  main_train_Model_IM.py   --fold 2   --index 0
+ python  main_train_Model_IM.py   --fold 3   --index 0
+ python  main_train_Model_IM.py   --fold 4   --index 0
+```
+
+d）Make predictions for the test datasets
+
+```console
+ python IEPAPI_predict.py --input ./data/processed/DataS3.csv --output ./output/results/DataS3_by_IEPAPI.csv
+ python IEPAPI_predict.py --input ./data/processed/DataS4.csv --output ./output/results/DataS4_by_IEPAPI.csv
+ python IEPAPI_predict.py --input ./data/processed/DataS5.csv --output ./output/results/DataS5_by_IEPAPI.csv
+```

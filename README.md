@@ -6,7 +6,7 @@ _ _ _ _
 
 #### 1) Dependencies and operating systems
 
-python(version=3.7.9); torch(version=1.8.0)；torchvision(version==0.2.2); numpy(version==1.18.5); pandas(version=1.2.4); tqdm(version=4.19.9); matplotlib(version=3.3.2); seaborn(version=0.11.1)
+python(version=3.7.9); torch(version=1.8.0)；torchvision(version==0.2.2); numpy(version==1.18.5); pandas(version=1.2.4); tqdm(version=4.19.9); matplotlib(version=3.3.2); seaborn(version=0.11.1);weblogo(version=3.7.12)
 
 It is recommended to use the linux system, here we used Centos Linux release 7.9.2009(Core) system.
 

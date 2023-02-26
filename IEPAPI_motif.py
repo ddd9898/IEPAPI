@@ -64,11 +64,17 @@ class randomPepData(Dataset):
 
 
 if __name__ == '__main__':
-    #python model_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY --require_pdf True
-    #python model_motif.py --MHC HLA-B*40:01 --MHCseq YHTKYREISTNTYESNLYLRYNYYSLAVLAYEWY --require_pdf True
-    #python model_motif.py --MHC HLA-B*57:03 --MHCseq YYAMYGENMASTYENIAYIVYNYYTWAVLAYLWY --require_pdf True
-    #python model_motif.py --MHC HLA-A*68:01 --MHCseq YYAMYRNNVAQTDVDTLYIMYRDYTWAVWAYTWY --require_pdf True
-    #python model_motif.py --MHC HLA-B*44:02 --MHCseq YYTKYREISTNTYENTAYIRYDDYTWAVDAYLSY --require_pdf True
+    #python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY --require_pdf True
+    #python IEPAPI_motif.py --MHC HLA-B*40:01 --MHCseq YHTKYREISTNTYESNLYLRYNYYSLAVLAYEWY --require_pdf True
+    #python IEPAPI_motif.py --MHC HLA-B*57:03 --MHCseq YYAMYGENMASTYENIAYIVYNYYTWAVLAYLWY --require_pdf True
+    #python IEPAPI_motif.py --MHC HLA-A*68:01 --MHCseq YYAMYRNNVAQTDVDTLYIMYRDYTWAVWAYTWY --require_pdf True
+    #python IEPAPI_motif.py --MHC HLA-B*44:02 --MHCseq YYTKYREISTNTYENTAYIRYDDYTWAVDAYLSY --require_pdf True
+    
+    #CUDA_VISIBLE_DEVICES=0 python IEPAPI_motif.py --MHC HLA-B*27:05 --MHCseq YHTEYREICAKTDEDTLYLNYHDYTWAVLAYEWY --require_pdf True &
+    #CUDA_VISIBLE_DEVICES=0 python IEPAPI_motif.py --MHC HLA-B*27:09 --MHCseq YHTEYREICAKTDEDTLYLNYHHYTWAVLAYEWY --require_pdf True &
+    
+    #CUDA_VISIBLE_DEVICES=7 python IEPAPI_motif.py --MHC HLA-B*27:04 --MHCseq YHTEYREICAKTDESTLYLNYHDYTWAELAYEWY --require_pdf True &
+    #CUDA_VISIBLE_DEVICES=7 python IEPAPI_motif.py --MHC HLA-B*27:06 --MHCseq YHTEYREICAKTDESTLYLNYDYYTWAELAYEWY --require_pdf True &
     
     #Get argument parse
     args = get_args()
@@ -88,7 +94,7 @@ if __name__ == '__main__':
 
 
     model_dir = './output/models/'
-    model_basename = 'Model-IM_fold*_index2_IM.model'
+    model_basename = 'Model-IM_fold*_index0_IM.model'
     models = []
     for n in range(5):
         model = Model_atten_score(num_encoder_layers = 1).to(device)
@@ -223,10 +229,10 @@ if __name__ == '__main__':
         with open(title_logo + '.jpg','wb') as f:
             f.write(output)
         f.close()
-        if args.require_pdf == 'True':
-            with open(title_logo + '.pdf','wb') as f:
-                f.write(output2)
-            f.close()
+        # if args.require_pdf == 'True':
+        #     with open(title_logo + '.pdf','wb') as f:
+        #         f.write(output2)
+        #     f.close()
         os.remove('./data/temp.txt')
 
 

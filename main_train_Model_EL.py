@@ -2,16 +2,16 @@ import numpy as np
 import torch
 import os
 import random
-from models.models import Model_IM
+from models.models import baseline
 from torch.utils.data import DataLoader
 import argparse
 from sklearn.metrics import roc_auc_score,accuracy_score,f1_score,precision_score,recall_score,precision_recall_curve,auc
 import logging
 from utils.seqdataloader import seqData
 from torch.nn import functional as F
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 
-#CUDA_VISIBLE_DEVICES=0 python  main_train_Model_IM.py   --fold 0   --index 0  &
+#CUDA_VISIBLE_DEVICES=0 python  main_train_Model_EL.py   --fold 0   --index 0  &
 
 def train(model, device, train_loader, optimizer, epoch):
     '''
@@ -20,10 +20,6 @@ def train(model, device, train_loader, optimizer, epoch):
     # print('Training on {} samples...'.format(len(train_loader.dataset)))
     logging.info('Training on {} samples...'.format(len(train_loader.dataset)))
     model.train()
-    for m in model.named_modules():
-        if 'bn1' in m[0] or 'bn2' in m[0]:
-            m[1].eval()
-    
     train_loss = 0
     for batch_idx, data in enumerate(train_loader):
         #Get input
@@ -31,13 +27,14 @@ def train(model, device, train_loader, optimizer, epoch):
 
         #Calculate output
         optimizer.zero_grad()
-        _,y_IM = model(ConcatSeq)
-        y_IM = y_IM.squeeze()
+        y = model(ConcatSeq)
+        y = y.squeeze()
 
         ###Calculate loss
         g = data[1].to(device).squeeze()
-
-        loss = F.binary_cross_entropy(y_IM,g)
+        
+        
+        loss = F.binary_cross_entropy(y,g)
         train_loss = train_loss + loss.item()
 
         #Optimize the model
@@ -66,9 +63,10 @@ def predicting(model, device, loader):
 
             #Calculate output
             g = data[1]
-            _,y_IM = model(ConcatSeq)
+            y = model(ConcatSeq)
+
          
-            preds = torch.cat((preds, y_IM.cpu()), 0)
+            preds = torch.cat((preds, y.cpu()), 0)
             labels = torch.cat((labels, g), 0)
 
     return labels.numpy().flatten(),preds.numpy().flatten()
@@ -120,10 +118,10 @@ def LoadDataset(fold = 0):
         trainDataset, valDataset
     '''
     #Load Train and Val Data
-    trainDataset = seqData(datapath='./data/processed/DataS2.csv',
-        cv_data_path='./data/processed/fivefold_val_flags(DataS2).csv',val_flag = False, fold = fold)
-    valDataset = seqData(datapath='./data/processed/DataS2.csv',
-        cv_data_path='./data/processed/fivefold_val_flags(DataS2).csv',val_flag = True, fold = fold)
+    trainDataset = seqData(datapath='./data/processed/DataS1.csv',
+                 cv_data_path='./data/processed/fivefold_val_flags(DataS1).csv',val_flag = False, fold = fold)
+    valDataset = seqData(datapath='./data/processed/DataS1.csv',
+                 cv_data_path='./data/processed/fivefold_val_flags(DataS1).csv',val_flag = True, fold = fold)
 
     return trainDataset, valDataset
 
@@ -159,7 +157,7 @@ if __name__ == '__main__':
     logger.setLevel(logging.INFO)
 
     #Output name
-    model_name = 'Model-IM'
+    model_name = 'Model-EL'
         
     add_name = '_fold' + str(args.fold) + '_index' + str(args.index)
     model_file_name =  './output/models/' + model_name + add_name
@@ -179,7 +177,7 @@ if __name__ == '__main__':
 
     #Tensorboard
     logfile = './output/log/log_' + model_name + add_name
-    writer = SummaryWriter(logfile)
+    # writer = SummaryWriter(logfile)
     
 
     #Step 1:Prepare dataloader
@@ -190,28 +188,9 @@ if __name__ == '__main__':
 
     #Step 2: Set  model
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    model = Model_IM(num_encoder_layers = 1).to(device) #1
-    
-    logging.info('Load pretrained Model-EL')
-    modelfilename =  'Model-EL_fold{}_index0_EL.model'.format(args.fold)
-    pretrained_path = './output/models/' + modelfilename
-    # pre_model = torch.load(pretrained_path,map_location=torch.device('cpu'))
-    pre_model = torch.load(pretrained_path)
-    model2dict = model.state_dict()
-    state_dict = {k:v for k,v in pre_model.items() if k in model2dict.keys()}
-    model2dict.update(state_dict)
-    model.load_state_dict(model2dict)
-    
-    #Froze loaded layers
-    frozed_layers = ['embeddingLayer','positionalEncodings','transformer_encoder','fc1','bn1','fc2','bn2','outputlayer']
-    for name, param in model.named_parameters():
-        for layer in frozed_layers:
-            if layer in name:
-                param.requires_grad = False
-                break
+    model = baseline(num_encoder_layers = 1).to(device) #1
 
     #Step 3: Train the model
-    
     optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01) #0.01
 
                                                     
@@ -225,7 +204,6 @@ if __name__ == '__main__':
     ''')
 
     best_AUCROC = -1
-    # best_AUCPR = -1
 
     early_stop_count = 0
     for epoch in range(NUM_EPOCHS):
@@ -236,7 +214,7 @@ if __name__ == '__main__':
         #Validate
         logging.info('predicting for valid data')
         G,P = predicting(model, device, valid_loader)
-        # loss,precision,recall,accuracy,F1_score,AUC_ROC,PCC,AUC_PR = evalute(G,P)
+    
         [accuracy,precision,recall,F1_score,AUC_ROC,AUC_PR]  = evalute(G,P)
 
         #Logging
@@ -250,24 +228,27 @@ if __name__ == '__main__':
             early_stop_count = 0
 
             #Save model
-            torch.save(model.state_dict(), model_file_name + '_IM' +'.model')
+            torch.save(model.state_dict(), model_file_name + '_EL' +'.model')
     
         else:
             early_stop_count = early_stop_count + 1
+            
+            
 
         logging.info('BestEpoch={}; Best AUCROC={:.4f}.'.format(
             BestEpoch,best_AUCROC
         ))
-        
 
-        # Tensorboard
-        writer.add_scalar('accuracy_val', accuracy, epoch)
-        writer.add_scalar('AUC_ROC_val', AUC_ROC, epoch)
-        writer.add_scalar('recall_val', recall, epoch)
-        writer.add_scalar('precision_val', precision, epoch)
-        writer.add_scalar('F1_score_val', F1_score, epoch)
-        writer.add_scalar('AUC_PR_val', AUC_PR, epoch)
-        writer.add_scalar('loss_train', train_loss, epoch)
+        #Tensorboard
+        # precision,recall,accuracy,F1_score,AUC_ROC,PCC,AUC_PR = evaluation
+        # writer.add_scalar('accuracy_val', accuracy, epoch)
+        # writer.add_scalar('AUC_ROC_val', AUC_ROC, epoch)
+        # writer.add_scalar('PCC_val', PCC, epoch)
+        # writer.add_scalar('recall_val', recall, epoch)
+        # writer.add_scalar('precision_val', precision, epoch)
+        # writer.add_scalar('F1_score_val', F1_score, epoch)
+        # writer.add_scalar('AUC_PR_val', AUC_PR, epoch)
+        # writer.add_scalar('loss_train', train_loss, epoch)
 
         if early_stop_count >= 50:
             logging.info('Early Stop.')

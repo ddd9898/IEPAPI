@@ -11,7 +11,7 @@ from utils.seqdataloader import seqData
 from torch.nn import functional as F
 from torch.utils.tensorboard import SummaryWriter
 
-#CUDA_VISIBLE_DEVICES=0 python  main_train_baseline_IM.py   --fold 0   --index 2  &
+#CUDA_VISIBLE_DEVICES=0 python  main_train_baseline_IM.py   --fold 0   --index 0  &
 
 def train(model, device, train_loader, optimizer, epoch):
     '''
@@ -83,7 +83,6 @@ def evalute(G,P):
             GT_labels.append(int(item))
             Pre.append(P[n])
 
-    # Thresh = 0.425625 #1-np.log(500)/np.log(50000)
     AUC_ROC = roc_auc_score(GT_labels,Pre)
     precision_list, recall_list, _ = precision_recall_curve(GT_labels, Pre)
     AUC_PR = auc(recall_list, precision_list)
@@ -120,13 +119,10 @@ def LoadDataset(fold = 0):
         trainDataset, valDataset
     '''
     #Load Train and Val Data
-    # trainDataset = seqData(val_flag = False, fold = fold)
-    # valDataset = seqData(val_flag = True, fold = fold)
-    
-    trainDataset = seqData(datapath='./data/processed/trainingData_IM.csv',
-        cv_data_path='./data/processed/fivefold_val_flags(trainingData_IM).csv',val_flag = False, fold = fold)
-    valDataset = seqData(datapath='./data/processed/trainingData_IM.csv',
-        cv_data_path='./data/processed/fivefold_val_flags(trainingData_IM).csv',val_flag = True, fold = fold)
+    trainDataset = seqData(datapath='./data/processed/DataS2.csv',
+        cv_data_path='./data/processed/fivefold_val_flags(DataS2).csv',val_flag = False, fold = fold)
+    valDataset = seqData(datapath='./data/processed/DataS2.csv',
+        cv_data_path='./data/processed/fivefold_val_flags(DataS2).csv',val_flag = True, fold = fold)
 
     return trainDataset, valDataset
 
@@ -197,10 +193,7 @@ if __name__ == '__main__':
 
     #Step 3: Train the model
     optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01) #0.01
-    # optimizer = torch.optim.Adam(model.parameters(), lr=LR) #,weight_decay=0.0001
-    # optimizer = torch.optim.SGD(model.parameters(), lr=LR)
-    # scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[20,50], #10,20
-    #                                             gamma=0.1)
+
                                                     
     logging.info(f'''Starting training:
     Epochs:          {NUM_EPOCHS}

@@ -72,10 +72,10 @@ class new_dataset(Dataset):
 
 if __name__ == '__main__':
     
-    #python model_predict.py --input ./data/DataS4.csv --output ./data/DataS4_by_model.csv
-    #python model_predict.py --input ./data/DataS5.csv --output ./data/DataS5_by_model.csv
+    #python IEPAPI_predict.py --input ./data/processed/DataS4.csv --output ./output/results/DataS4_by_IEPAPI.csv
+    #python IEPAPI_predict.py --input ./data/processed/DataS5.csv --output ./output/results/DataS5_by_IEPAPI.csv
     
-    #python model_predict.py --input ./data/DataS3.csv --output ./data/DataS3_by_model.csv
+    #python IEPAPI_predict.py --input ./data/processed/DataS3.csv --output ./output/results/DataS3_by_IEPAPI.csv
     
     
     #Get argument parse
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     test_loader = DataLoader(testDataset, batch_size=2048, shuffle=False)
 
     model_dir = './output/models/'
-    model_basename = 'Model-IM_fold*_index2_IM.model'
+    model_basename = 'Model-IM_fold*_index0_IM.model'
     
     models = []
     for n in range(5):

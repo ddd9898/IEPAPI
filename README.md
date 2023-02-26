@@ -23,7 +23,7 @@ This is the 1th version which has been tested on independent antigen presentatio
 Download the source code and unzip it. Simply enter the directory of IEPAPI and install all required dependencies on your operating system:
 
 ```console
-cd ./IEPAPI-master
+cd ./IEPAPI-main
 pip install -r dependencies.txt
 ```
 
@@ -52,7 +52,7 @@ pip install -r dependencies.txt
 - Run the command to obtain the immune epitope motif for the specified HLA：
   
   ```console
-  python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY -- require_pdf True
+  python IEPAPI_motif.py --MHC HLA-A*11:01 --MHCseq YYAMYQENVAQTDVDTLYIIYRDYTWAAQAYRWY --require_pdf True
   ```
 
 - --MHC: the name of the MHC molecule

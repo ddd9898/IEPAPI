@@ -1,4 +1,4 @@
-# IEPAPI：An improved immune epitope prediction method by incorporating antigen presentation and immunogenicity
+# IEPAPI: A method for immune epitope prediction by incorporating antigen presentation and immunogenicity
 
 _ _ _ _
 
